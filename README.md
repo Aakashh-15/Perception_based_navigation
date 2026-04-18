@@ -82,7 +82,7 @@ ros2 run mini_r1_v1_gz mission_controller.py
 
 ---
 
-## 🧠 Control Theory: MIT Lookahead Logic
+## 🧠 Control Theory:
 
 The robot utilizes a **predictive steering model** that projects a virtual point $L$ meters ahead of the robot. This allows the system to steer into corners *before* reaching them, eliminating the "ping-pong" oscillation effect.
 
