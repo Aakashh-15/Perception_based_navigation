@@ -1,6 +1,6 @@
 # Perception-based Navigation Stack
 
-An advanced autonomous navigation system for the **R1 Mini** rover, designed for Gazebo/Ignition simulation. This project integrates the **MIT Geometric Lookahead** algorithm for high-speed wall following with a **YOLOv11** vision pipeline for real-time object classification and sequential mission control.
+An advanced autonomous navigation system for the **R1 Mini** rover, designed for Gazebo/Ignition simulation. This project integrates the **Geometric Lookahead** algorithm for high-speed wall following with a **YOLOv8** vision pipeline for real-time object classification and sequential mission control.
 
 ---
 
@@ -22,7 +22,7 @@ This repository implements a decoupled **"Split-Brain" architecture** to handle 
 | Simulator | Gazebo / Ignition (Fortress or Garden) |
 
 **Python Dependencies:**
-- `ultralytics` (for YOLOv11)
+- `ultralytics` (for YOLOv8)
 - `opencv-python`
 - `cv_bridge`
 
