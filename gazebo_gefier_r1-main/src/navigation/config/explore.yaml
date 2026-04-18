@@ -1,0 +1,27 @@
+explore_node:
+  ros__parameters:
+    # Frame settings (Matches your Nav2 config)
+    robot_base_frame: "base_link"
+    
+    # We look at the SLAM map to find frontiers
+    costmap_topic: "map"
+    costmap_updates_topic: "map_updates"
+    
+    # Visualizes the frontiers in RViz (blue markers)
+    visualize: true
+    
+    # How often to calculate a new frontier (Hz)
+    planner_frequency: 0.5
+    
+    # If the robot hasn't moved in 30 seconds, pick a new frontier
+    progress_timeout: 30.0
+    
+    # Weighting factors for picking which frontier to go to
+    potential_scale: 5.0     # Prefers frontiers closer to the robot
+    orientation_scale: 0.0   # (Usually leave at 0)
+    gain_scale: 1.0          # Prefers larger frontiers (more unknown space)
+    
+    # Minimum size of a frontier to consider it valid (meters)
+    # Prevents the robot from trying to explore tiny gaps behind table legs
+    min_frontier_size: 0.25
+    transform_tolerance: 0.3
